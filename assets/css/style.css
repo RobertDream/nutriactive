@@ -3,7 +3,7 @@
     padding:0;
     list-style:none;
     text-decoration: none;
-   background-color: cadetblue;
+   background-color: rgb(78, 91, 92);
    box-sizing: border-box;
 }
 li,a,button
@@ -22,6 +22,37 @@ align-items:center;
 padding:30px 10%;
 }
 .logo{
-    width:150;
+    width:150px;
     height:130px;
+    cursor:pointer;
+}
+.nav-links
+{
+list-style:none;
+}
+.nav-links li
+{
+display:inline-block;
+padding:0px 20px;
+
+}
+.nav-links li a
+{
+transition:all 0.3s ease 0s;
+}
+.nav-links li a:hover
+{
+    color:#00889;
+}
+button
+{
+padding:9px 25px;
+background-color: #rgba(0,136,169,1);
+border:none;
+border-radius:50px;
+cursor:pointer;
+transition:all 0.3 ease 0;
+}
+button:hover{
+    background-color: #rgba(0,136,169,1);
 }
