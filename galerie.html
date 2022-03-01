@@ -17,24 +17,76 @@
           <a href="contact.html" class="menu-anchor">Contact</a>
           <a href="blog.html" class="menu-anchor">Blog</a>
           <a href="galerie.html" class="menu-anchor">Galerie Foto</a>
-          <a href="tipuri.html" class="menu-anchor">Tipuri de Antrenamente</a>
           <a href="calculator.html" class="menu-anchor">Calculator Caloric</a>
         </nav>
       </div>
     </header>
-    <div class="container m-auto space-in-top">
-    <h1>Galerie Foto</h1>
-    <div class="galery">
-      <img src="assets/images/ronie.png"/>
-      <img src="assets/images/jay.jpg"/>
-      <img src="assets/images/yates.jpg" style="height:200px"/>
-      <img src="assets/images/flex.jpg"/>
-      <img src="assets/images/chris.jpg"/>
-      <img src="assets/images/regan1.jpg"/>
-      <img src="assets/images/breona.jpg"/>
-      <img src="assets/images/andrei.jpg"/>
+    <body class="bg-gal">
+     <div class="container m-auto space-in-top">
+      <p class="as-p">Schimba modul de vizualizare</p>
+      <div class="Gallery" id="myGallery">
+        <button class="btn-gl" onclick="one()">1</button>
+        <button class="btn-gl active" onclick="two()">2</button>
+        <button class="btn-gl" onclick="four()">4</button>
+      </div>
+      <div class="row"> 
+        <div class="column">
+          <img src="assets/images/andrei.jpg" style="width:100%">
+          <img src="assets/images/abs.jpg" style="width:100%">
+          <img src="assets/images/fitnes.jpg" style="width:100%">
+          <img src="assets/images/girl.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/images/lat.jpg" style="width:100%">
+          <img src="assets/images/push.jfif" style="width:100%">
+          <img src="assets/images/squat.jpg" style="width:100%">
+          <img src="assets/images/pull.jpg" style="width:100%">
+        </div>  
+        <div class="column">
+          <img src="assets/images/1.jpg" style="width:100%">
+          <img src="assets/images/2.jpg" style="width:100%">
+          <img src="assets/images/3.jpg" style="width:100%">
+          <img src="assets/images/4.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/images/curl.jfif" style="width:100%">
+          <img src="assets/images/5.jpg" style="width:100%">
+          <img src="assets/images/7.jfif" style="width:100%">
+          <img src="assets/images/chris.jpg" style="width:100%">
+        </div>
+      </div>
     </div>
-    </div>
+      <script>
+      var elements = document.getElementsByClassName("column");
+      var i;
+      function one() {
+          for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "100%"; 
+          elements[i].style.flex = "100%";
+        }
+      }
+      function two() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "50%"; 
+          elements[i].style.flex = "50%";
+        }
+      }
+      function four() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "25%";  
+          elements[i].style.flex = "25%";
+        }
+      }
+      var header = document.getElementById("myGallery");
+      var btns = header.getElementsByClassName("btn-gl");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
     <script src="main.js"></script>
   </body>
 </html>

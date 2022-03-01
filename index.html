@@ -18,7 +18,6 @@
         <a href="contact.html" class="menu-anchor">Contact</a>
         <a href="blog.html" class="menu-anchor">Blog</a>
         <a href="galerie.html" class="menu-anchor">Galerie Foto</a>
-        <a href="tipuri.html" class="menu-anchor">Tipuri de Antrenamente</a>
         <a href="calculator.html" class="menu-anchor">Calculator Caloric</a>
       </nav>
     </div>
@@ -105,21 +104,21 @@
         <div class="slideshow-container">
           <div class="mySlides fade">
             <p class="text-tst  bottom-spacing">
-              Am fost foarte mulțumit de serviciile oferite, înmormântarea a decurs în cele mai bune condiții datorită lor. Recomand cu încredere  Pompe Funebre Dio!
+              „Mergeam la sala de ceva timp, dar la un moment dat nu am mai observat nici un progres, ba mai mult a aparut si o accidentare la umar pentru ca nu executam corect anumite exercitii. Pe Robert il cunoasteam de mai demult dar de un an am inceput sa lucram impreuna si pe parte de kinetoterapie si bodybuilding/fitness, imbunatatindu-mi atat postura cat si performantele in sala de sport! Este un antrenor complet, Recomand!”
             </p>
             <p class="subtitle white">ALIN</p>
           </div>
 
           <div class="mySlides fade">
             <p class="text-tst bottom-spacing">
-              Raportul preț-calitate este unul foarte bun, serviciile sunt de calitate ridicată iar prețurile cred ca sunt cele mai mici din Cluj. Recomand cu încredere!
+              „Robert este o persoana profesionista, pasionata si placuta, care îmbina excelent teoria cu practica si m-a ajutat sa imi tratez o accidentare care ma împiedica sa ma antrenez optim, eu facand sport de performanta. Pe langa asta, am tratat si unele dezechilibre musculare. In concluzie, vi-l recomand cu drag si incredere!”
             </p>
             <p class="subtitle white">COSTEL</p>
           </div>
 
           <div class="mySlides fade">
             <p class="text-tst  bottom-spacing">
-              Am fost tratat foarte respectuos, băieții au dat dovadă de punctualitate și seriozitate, cu siguranță voi apela la voi si data viitoare. Recomand cu încredere.
+              „Robert a aparut in viata mea in momentul in care aveam 2 ani de sport in sala de fitness si o hernie de disc lombara atat de dureroasa incat aproape ca renuntasem la sport. Dupa 1 luna jumate de kinetoterapie combinata cu exercitii de fitness, Robert, a reusit sa ma scoata din criza si astfel, viata mea sa isi recapete cursul normal. Profesonalismul si seriozitatea lui, plus bagajul de cunostinte atat din domeniul kinetoterapiei cat si din fitness m-au convins sa respect instructiunile lui atat in sala de sport cat si „temele” pentru acasa. Rezultatele rapide m-au convins ca am facut alegerea potrivita atunci cand l-am ales pe Robert pentru a avea grija de sanatatea si conditia mea fizica.”
             </p>
             <p class="subtitle white">MARIAN</span></p>
           </div>
@@ -149,17 +148,12 @@
   /*slider*/
   var slideIndex = 1;
 showSlides(slideIndex);
-
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -170,10 +164,10 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active-dot", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " active-dot";
 }
   </script>
 </body>
