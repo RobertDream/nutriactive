@@ -7,7 +7,4 @@ function sticky(header, anchor){
 window.addEventListener("scroll", function(){
 sticky(header, anchor);
 });
-
-
- 
-      
+   

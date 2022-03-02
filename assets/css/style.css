@@ -424,7 +424,7 @@ font-weight: 200;
 }
 
 .card-blog img{
-	width: 80%;
+  width:50%;
 }
 .row:after {
   content: "";
