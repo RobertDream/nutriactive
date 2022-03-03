@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Calculator Caloric</title>
   </head>
 <body class="bg-img">
@@ -23,6 +24,19 @@
         <a href="galerie.html" class="menu-anchor">Galerie Foto</a>
         <a href="calculator.html" class="menu-anchor">Calculator Caloric</a>
       </nav>
+      <div id="menu-mobile-btn-container">
+        <div class="menu-mobile-btn">
+        </div>
+      </div>
+      <div class="menu-mobile-container">
+        <i class="fa fa-times" id="close-menu"></i>
+        <div class="main-nav-mobile">
+          <a href="contact.html" class="menu-anchor">Contact</a>
+          <a href="tipuri.html" class="menu-anchor">Tipuri de Antrenamente</a>
+          <a href="galerie.html" class="menu-anchor">Galerie Foto</a>
+          <a href="calculator.html" class="menu-anchor">Calculator Caloric</a>
+        </div>
+      </div>
     </div>
   </header>
   <div class="container center">
@@ -105,7 +119,8 @@
             </div>
             <div class="form-group row">
               <legend class="col-form-label col-sm-2 ">Activitate</legend>
-              <select class="custom-select col-sm-10 " id="list">
+              <div class="col-sm-10">
+              <select class="custom-select" id="list">
                 <option selected value="1">
                   Sedentar (putin exercitiu fizic sau deloc)
                 </option>
@@ -124,6 +139,7 @@
                   fizic sau 2x activitate)
                 </option>
               </select>
+              </div>
             </div>
             <div class="form-group">
               <button class="btn btn-primary btn-sm">Calculate</button>
@@ -149,7 +165,7 @@
       </div>
     </div>
   </div>
-  <footer style="margin-top: 50px;">
+  <footer>
     <div class="footer-content">
       <h3>PROGRAM DE LUCRU</h3>
       <p>
@@ -181,6 +197,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/calculator.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
