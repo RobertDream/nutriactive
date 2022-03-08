@@ -400,7 +400,6 @@ font-weight: 200;
   width: 100%;
 }
 .center {
-  padding-bottom: 50px;
   margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 33, 3%);
@@ -416,7 +415,7 @@ font-weight: 200;
 /*Blog*/
 .leftcolumn {   
   float: left;
-  width: 100%;
+  width: 100git %;
 }
 .card-blog{
 	padding: 20px;
@@ -424,52 +423,17 @@ font-weight: 200;
  margin-top:20px;
 }
 
-.card-blog img{
+.card-blog img
+{
   width:50%;
 }
-.row:after {
-  content: "";
+.row:after
+ {
+  content: " ";
   display: table;
   clear: both;
 }
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.popup .popuptext {
-  visibility: hidden;
-  width: 300px;
-  height:fit-content;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom:0;
-  left:120% ;
-}
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgb(153, 153, 153) transparent transparent transparent;
-}
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
+
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
   to {opacity: 1;}
@@ -590,116 +554,25 @@ textarea {
   color:#f1f1f1;
   font-family: 'Times New Roman', Times, serif;
 }
-#menu-mobile-btn-container{
-  display: none;
-  margin-left: auto;
-  height: 25px;
-}
-.menu-mobile-btn{
-  width: 28px;
-  height: 4px;
-  background: #fff;
-}
-.menu-mobile-btn::after, .menu-mobile-btn::before{
-  content: '';
-  position: absolute;
-  width: 28px;
-  height: 4px;
-  background: #fff;
-}
-.menu-mobile-btn::after{
-  transform: translateY(20px);
-}
-.menu-mobile-btn::before{
-  transform: translateY(10px);
-}
-.menu-mobile-container{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #fff;
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
-.main-nav-mobile{
-  display: flex;
-  flex-direction: column;
-  height: 50%;
-  justify-content: space-between;
-}
-#close-menu{
-  font-size: 35px;
-  position: absolute;
-  top: 30px;
-  z-index: 99999;
-  right: 30px;
-}
-header.sticky {
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: all 0.3s;
-  margin:0;
-}
-.menu-anchor.sticky {
-  color: var(--orange);
-  position: sticky;
-  right:0;
-}
-.articol{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 40px;
-  height: 350px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.articol img{
-  height: 100%;
-  width: 100%;
-}
-.articol-text{
-  display: flex;
-  align-items: center;
-}
 /* Media Queries */
 @media screen and (max-width: 1200px) {
-  .container{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .s-content{
-    width: 100%;
+  body
+  {
+    margin:0;
+    width:100%;
   }
 }
-@media screen and (max-width: 1000px){
-  .main-nav{
-    display: none;
+
+@media (min-width: 600px) {
+  header.sticky {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s;
+    margin:0;
   }
-  #menu-mobile-btn-container{
-    display: block;
-  }
-  .info{
-    display: block;
-  }
-  .info div{
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 800px){
-  .s-title{
-    font-size: 30px;
-  }
-  .s-description{
-    font-size: 16px;
-  }
-  .articol{
-    height: auto;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .articol-text{
-    margin-top: 30px;
+  .menu-anchor.sticky {
+    color: var(--orange);
+    position: sticky;
+    right:0;
   }
 }
 @media (max-width: 600px) {
@@ -734,24 +607,5 @@ header.sticky {
       "showcase"
       "top-box-a"
       "top-box-b";
-  }
-}
-
-@media screen and (max-width: 600px){
-  .testimonials{
-    height: auto;
-    padding-bottom: 40px;
-  } 
-  .s-content{
-    row-gap: 30px;
-  }
-  .as-p{
-    font-size: 22px;
-  }
-  .space-in-top{
-    padding-bottom: 50px;
-  }
-  .no-mobile{
-    display: none;
   }
 }
